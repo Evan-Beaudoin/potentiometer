@@ -1,6 +1,7 @@
 basic.showIcon(IconNames.Yes)
 basic.pause(200)
+let Potentiometer = pins.analogReadPin(AnalogPin.P0)
 basic.forever(function () {
-    basic.showNumber(pins.analogReadPin(AnalogPin.P0))
-    basic.pause(100)
+    basic.showNumber(Potentiometer)
+    basic.pause(10)
 })
